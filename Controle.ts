@@ -4,15 +4,19 @@ import { Televisao } from './Tv';
 const prompt = promptSync();
 
 function exibirMenu(): void {
+console.log(tv.getStatus());
 
-    console.log(tv.getStatus());
-
-    console.log("\nControle Remoto:");
-    console.log("1 - Ligar/Desligar");
-    console.log("2 - Mudar Canal");
-    console.log("3 - Aumentar Volume");
-    console.log("4 - Diminuir Volume");0
-    console.log("0 - Sair");
+    console.log(`
+==============================
+        CONTROLE REMOTO
+==============================
+= 1 - Ligar/Desligar          
+= 2 - Mudar Canal             
+= 3 - Aumentar Volume         
+= 4 - Diminuir Volume         
+= 0 - Sair                    
+==============================
+    `);
 }
 
 const tv = new Televisao();

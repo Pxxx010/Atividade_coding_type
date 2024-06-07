@@ -34,10 +34,15 @@ export class Televisao {
     }
 
     getStatus(): string {
+        console.clear()
         const status = `
-        TV ${this.ligada ? 'ligada' : 'desligada'}
-        Canal: ${this.canal}
-        Volume: ${this.volume}`;
+    TV Status:
+    --------------------------
+    TV:      ${this.ligada ? 'Ligada' : 'Desligada'}
+    Canal:   ${this.canal}
+    Volume:  ${this.volume}
+    --------------------------
+        `;
         return status;
     }
 }
